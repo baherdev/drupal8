@@ -1,0 +1,4 @@
+name: Profile
+description: Module to create Content Entity Type
+type: module
+core: 8.x

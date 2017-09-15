@@ -1,0 +1,6 @@
+profile.collection:
+  title: 'Profile Entity'
+  route_name: entity.profile.collection
+  description: 'Create Profile Entity type'
+  weight: 10
+  parent: system.admin_structure
