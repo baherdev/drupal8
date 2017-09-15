@@ -106,3 +106,27 @@ ul.single-item  {
   position: absolute;
   padding-left: 10px;
 }
+
+/* Bloc Advertise*/
+
+.row li{
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.bloc-ads{
+  transition: box-shadow 200ms ease-out;
+  border: 1px solid #eeee;
+}
+
+.bloc-ads:hover{
+  box-shadow: 0 0 3px #515151;
+}
+
+.bloc-ads h3 a{
+  padding-left: 1px;
+
+}
+.bloc-ads .text-right{
+  padding-right: 6px;
+}
