@@ -33,3 +33,8 @@ map:
   js:
     js/map.js: {}
     //maps.googleapis.com/maps/api/js?key=AIzaSyBp6MMHDTSjl9E3YtdVVbf4r-1hibU9Dus&callback=initMap: {type: external}
+map:
+  version: VERSION
+  js:
+    js/map.js: {}
+    //maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap: {type: external}

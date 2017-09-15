@@ -1,0 +1,5 @@
+<?php
+  function themedrupal8_preprocess_menu__main(&$varialble){
+    $var = \Drupal::config('system.site');
+    $varialble['title_web_site'] = $var->get('name');
+  }
