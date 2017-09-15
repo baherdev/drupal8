@@ -106,3 +106,23 @@ ul.single-item  {
   position: absolute;
   padding-left: 10px;
 }
+/*Hide default message on Front page*/
+.feed-icon{
+  display: none;
+}
+/*Footer*/
+#footer{
+  background-color: #222222;
+  color: #ffffff;
+}
+
+#footer li a{
+  color:#9d9d9d;
+}
+
+#footer ul ul{
+  margin-left: 40px;
+}
+#footer .row li{
+  margin-bottom: 5px;
+}
