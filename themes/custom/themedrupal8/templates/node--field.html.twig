@@ -1,0 +1,107 @@
+Hello Drupal
+{#Title#}
+<h2> Title </h2>
+<div> Label node.title.fielddefinition.label : {{ node.title.fielddefinition.label }} </div>
+<div> Value Solution 1 node.title.value : {{ node.title.value }} </div>
+<div> Value Solution 2 node.label : {{ node.label }} </div>
+{#Text formatted long with summary#}
+<h2> Text formatted long with summary </h2>
+<div> Label node.body.fielddefinition.label : {{ node.body.fielddefinition.label }}</div>
+<div> Value Solution 1 node.body.value : {{ node.body.value }} </div>
+<div> Value Solution 2 node.body.value|raw : {{ node.body.value|raw }} </div>
+<div> Value Solution 3 content.body : {{ content.body }} </div>
+<div>Value summary solution 1 node.body.summary: {{ node.body.summary }}</div>
+<div>Value summary solution 2 content.body['#object'].body.summary: {{ content.body['#object'].body.summary }}</div>
+{#Formatted text#}
+<h2>Formatted text</h2>
+<div> Label node.field_text_formatted.fielddefinition.label : {{ node.field_text_formatted.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_text_formatted.value : {{ node.field_text_formatted.value }} </div>
+<div> Value Solution 2 content.field_text_formatted.0 : {{ content.field_text_formatted.0 }} </div>
+{#Text plain#}
+<h2>Text plain</h2>
+<div> Label node.field_text_plain.fielddefinition.label : {{ node.field_text_plain.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_text_plain.value : {{ node.field_text_plain.value }} </div>
+<div> Value Solution 2 content.field_text_plain.0 : {{ content.field_text_plain.0 }} </div>
+{#Text plain long#}
+<h2>Text plain long</h2>
+<div> Label node.field_text_plain_long.fielddefinition.label : {{ node.field_text_plain_long.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_text_plain_long.value : {{ node.field_text_plain_long.value }} </div>
+<div> Value Solution 2 content.field_text_plain_long.0 : {{ content.field_text_plain_long.0 }} </div>
+{#List text#}
+<h2>List text</h2>
+<div> Label Sol 1 node.field_list_text.fielddefinition.label : {{ node.field_list_text.fielddefinition.label }}</div>
+<div> Label Sol 2 content.field_list_text['#title'] : {{ content.field_list_text['#title'] }}</div>
+<div> Value Solution 1 node.field_list_text.value : {{ node.field_list_text.value }} </div>
+<div> Value Solution 2 content.field_list_text.0 : {{ content.field_list_text.0 }} </div>
+{#Text formatted long#}
+<h2>Text formatted long</h2>
+<div> Label node.field_text_formatted_long.fielddefinition.label : {{ node.field_text_formatted_long.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_text_formatted_long.value : {{ node.field_text_formatted_long.value }} </div>
+<div> Value Solution 2 content.field_text_formatted_long.0 : {{ content.field_text_formatted_long.0 }} </div>
+<div> Value Solution 3 node.field_text_formatted_long.value|raw : {{ node.field_text_formatted_long.value|raw }} </div>
+{#Date#}
+{%set timestamp = node.field_date.value|date('U') %}
+<h2>Date</h2>
+<div> Label node.field_date.fielddefinition.label : {{ node.field_date.fielddefinition.label }}</div>
+<div> Value Solution 1 timestamp|format_date('long') : {{ timestamp|format_date('long')  }} </div>
+<div> Value Solution 2 timestamp|format_date('long') : {{ timestamp|format_date('cus')  }} </div>
+
+{#Email#}
+<h2>Email</h2>
+<div> Label node.field_email.fielddefinition.label : {{ node.field_email.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_email.value : {{ node.field_email.value }} </div>
+<div> Value Solution 2 content.field_email.0 : {{ content.field_email.0 }} </div>
+{# Link #}
+<h2>Link</h2>
+<div> Label content.field_link.0['#title'] : {{ content.field_link.0['#title'] }}</div>
+<div> Value Solution 1 content.field_link.0['#url'] : {{ content.field_link.0['#url'] }} </div>
+{#Timestamp#}
+<h2>Timestamp</h2>
+<div> Label node.field_timestamp.fielddefinition.label : {{ node.field_timestamp.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_timestamp.value : {{ node.field_timestamp.value }} </div>
+<div> Value Solution 2 content.field_timestamp.0 : {{ content.field_timestamp.0 }} </div>
+{#Number decimal#}
+<h2>Number decimal</h2>
+<div> Label node.field_number_decimal.fielddefinition.label : {{ node.field_number_decimal.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_number_decimal.value : {{ node.field_number_decimal.value }} </div>
+<div> Value Solution 2 content.field_number_decimal.0 : {{ content.field_number_decimal.0 }} </div>
+{#Number float#}
+<h2>Number float</h2>
+<div> Label node.field_number_float.fielddefinition.label : {{ node.field_number_float.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_number_float.value : {{ node.field_number_float.value }} </div>
+<div> Value Solution 2 content.field_number_float.0 : {{ content.field_number_float.0 }} </div>
+{#Number Integer#}
+<h2>Number Integer</h2>
+<div> Label node.field_number_integer.fielddefinition.label : {{ node.field_number_integer.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_number_integer.value : {{ node.field_number_integer.value }} </div>
+<div> Value Solution 2 content.field_number_integer.0 : {{ content.field_number_integer.0 }} </div>
+{#Float list#}
+<h2>Float list</h2>
+<div> Label node.field_list_float.fielddefinition.label : {{ node.field_list_float.fielddefinition.label }}</div>
+<div> Value Solution 1 node.field_list_float.value : {{ node.field_list_float.value }} </div>
+<div> Value Solution 2 content.field_list_float.0 : {{ content.field_list_float.0 }} </div>
+{#File#}
+<h2>File</h2>
+<div> Label node.field_file.fielddefinition.label : {{ node.field_file.fielddefinition.label }}</div>
+<div>Value Solution 1 content.field_file['#items'].entity.uri.value : {{ file_url(content.field_file['#items'].entity.uri.value) }}</div>
+<a href="{{ file_url(content.field_file['#items'].entity.uri.value) }}">Download File</a>
+{#Image#}
+<h2>Image</h2>
+<div> Label node.field_image_field.fielddefinition.label : {{ node.field_image_field.fielddefinition.label }}</div>
+<div>Value Solution 1 content.field_image_field['#items'].entity.uri.value : {{ file_url(content.field_image_field['#items'].entity.uri.value) }}</div>
+<img style="width:300px"src="{{ file_url(content.field_image_field['#items'].entity.uri.value) }}">
+{#Taxonomy term Entity Reference#}
+
+<h2>Taxonomy term Entity Reference</h2>
+<div> Label node.field_taxonomy_term.fielddefinition.label : {{ node.field_taxonomy_term.fielddefinition.label }}</div>
+<div>Value solution content.field_taxonomy_term[0]['#title'] : {{ content.field_taxonomy_term[0]['#title'] }}</div>
+{#User Entity Reference#}
+
+<h2>User term Entity Reference</h2>
+<div> Label node.field_user.fielddefinition.label : {{ node.field_user.fielddefinition.label }}</div>
+<div>Value solution content.field_user[0]['#title'] : {{ content.field_user[0]['#title'] }}</div>
+{#Content Entity Reference#}
+
+<h2>User term Entity Reference</h2>
+<div> Label node.field_content_reference.fielddefinition.label : {{ node.field_content_reference.fielddefinition.label }}</div>
+<div>Value solution content.field_content_reference[0]['#title'] : {{ content.field_content_reference[0]['#title'] }}</div>
