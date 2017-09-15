@@ -106,6 +106,7 @@ ul.single-item  {
   position: absolute;
   padding-left: 10px;
 }
+
 /* Bloc Advertise*/
 
 .row li{
@@ -148,4 +149,5 @@ ul.single-item  {
 }
 #footer .row li{
   margin-bottom: 5px;
+
 }
