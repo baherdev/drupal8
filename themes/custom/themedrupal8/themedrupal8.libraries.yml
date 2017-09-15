@@ -3,7 +3,33 @@ custom:
   css:
     theme:
       css/style.css: {}
+
+foundation:
+  version: 6.3.0
+  css:
+    theme:
+      vendor/foundation/css/app.css: {}
+      vendor/foundation/css/foundation.min.css: {}
   js:
-    js/app.js
+    vendor/foundation/js/vendor/foundation.js: {}
+    vendor/foundation/js/vendor/what-input.js: {}
+    vendor/foundation/js/app.js: {}
   dependencies:
     - core/jquery
+
+slick:
+  version: 1.6.0
+  css:
+    theme:
+      vendor/slick/slick.css: {}
+      vendor/slick/slick-theme.css: {}
+  js:
+    vendor/slick/slick.min.js: {}
+    js/slick.js: {}
+  dependencies:
+    - core/jquery
+map:
+  version: VERSION
+  js:
+    js/map.js: {}
+    //maps.googleapis.com/maps/api/js?key=AIzaSyBp6MMHDTSjl9E3YtdVVbf4r-1hibU9Dus&callback=initMap: {type: external}
